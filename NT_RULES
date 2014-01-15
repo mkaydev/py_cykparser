@@ -1,0 +1,10 @@
+1.0	S	NP	VP
+0.1 NP	Pron
+0.2	NP	N
+0.1	NP	Pron	N
+0.25	NP	Det	N
+0.15	NP	Det	NP
+0.1	NP	N	N
+0.1	NP	NP	NP
+0.4	VP	V
+0.6	VP	VP	NP

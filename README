@@ -1,0 +1,41 @@
+>python cky.py --h
+usage: cky.py [-h] [--ntrules NT_RULES] [--trules T_RULES] [--output OUTPUT]
+              [--start_symbol START_SYMBOL] [--sentences SENTENCES]
+
+Script which implements the Cocke-Younger-Kasami parsing algorithm with
+probabilistic rules.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --nt_rules NT_RULES   name of file with non-terminating rules
+  --t_rules T_RULES     name of file with terminating rules of form
+  --output OUTPUT       name of output-file (prints to stdout if not
+                        specified)
+  --start_symbol START_SYMBOL
+                        Start-symbol in Grammar
+  --sentences SENTENCES
+                        name of file with sentences (new line after each
+                        sentence)
+                        
+Non-terminal rules represent rules where one non-terminal creates at least one new non-terminal, i.e. rules of format:
+A -> B
+A -> B C 
+A -> A A
+A -> B A
+A -> A B
+with non-terminals {A, B, C}.
+
+Terminal rules represent rules where one non-terminal creates exactly one terminal, i.e. rules of format:
+A -> a
+with non-terminal A and terminal a.
+
+Format for specifying rules (new line after each rule):
+[probability] [producer] [produced]
+[probability] [producer] [produced] [produced]
+
+e.g. non-terminal:
+1.0	S	NP	VP
+0.1 NP	Pron
+
+e.g. terminal:
+0.4	Pron	I

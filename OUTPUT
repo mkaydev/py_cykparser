@@ -1,0 +1,51 @@
+(S	(NP	(Pron I))
+	(VP	(VP	(V made))
+		(NP	(Pron her)
+			(N duck))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(VP	(V made))
+			(NP	(Pron her)))
+		(NP	(N duck))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(V made))
+		(NP	(NP	(Pron her))
+			(NP	(N duck)))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(VP	(V gave))
+			(NP	(Det the)
+				(N library)))
+		(NP	(N books))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(V gave))
+		(NP	(Det the)
+			(NP	(N library)
+				(N books)))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(V gave))
+		(NP	(NP	(Det the)
+				(N library))
+			(NP	(N books)))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(VP	(V gave))
+			(NP	(Det the)
+				(NP	(N library))))
+		(NP	(N books))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(V gave))
+		(NP	(NP	(Det the)
+				(NP	(N library)))
+			(NP	(N books)))))
+
+(S	(NP	(Pron I))
+	(VP	(VP	(V gave))
+		(NP	(Det the)
+			(NP	(NP	(N library))
+				(NP	(N books))))))
+
